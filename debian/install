@@ -1,0 +1,4 @@
+bin/arabic-lexicon              usr/bin
+araby.desktop                   usr/share/applications
+araby.svg                       usr/share/icons/hicolor/scalable/apps
+arabic_lexicon                  usr/lib/python3/dist-packages

@@ -1,0 +1,17 @@
+Source: arabic-lexicon
+Section: utils
+Priority: optional
+Maintainer: Lysa <lysa@example.com>
+Build-Depends: debhelper-compat (= 13), dh-python, python3
+Standards-Version: 4.7.0
+Rules-Requires-Root: no
+
+Package: arabic-lexicon
+Architecture: all
+Depends: ${python3:Depends}, ${misc:Depends},
+ python3-pyqt6, qt6-wayland, fonts-noto-core
+Recommends: fonts-sil-scheherazade, fonts-sil-awami-nastaliq
+Description: Offline Arabic→English dictionary with RTL UI
+ A lightweight dictionary: type Arabic, see English meanings,
+ part of speech and example sentences. Native Wayland support,
+ right-to-left layout for Arabic text.

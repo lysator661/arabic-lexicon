@@ -1,0 +1,23 @@
+{
+  "كتاب": {
+    "pos": "noun",
+    "meanings": ["book", "volume", "publication"],
+    "examples": [
+      { "ar": "هذا كتاب مفيد.", "en": "This is a useful book." }
+    ]
+  },
+  "يقرأ": {
+    "pos": "verb",
+    "meanings": ["to read", "to study", "to recite"],
+    "examples": [
+      { "ar": "يقرأ القصّة كل يوم.", "en": "He reads the story every day." }
+    ]
+  },
+  "مدرسة": {
+    "pos": "noun",
+    "meanings": ["school", "educational institution"],
+    "examples": [
+      { "ar": "المدرسة قريبة من هنا.", "en": "The school is close to here." }
+    ]
+  }
+}

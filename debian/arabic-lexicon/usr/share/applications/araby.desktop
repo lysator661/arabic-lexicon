@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=Arabic Lexicon
+Name[ar]=معجم عربي
+Comment=Arabic → English dictionary with RTL layout
+Comment[ar]=قاموس عربي - إنجليزي بواجهة من اليمين لليسار
+Exec=arabic-lexicon
+Icon=araby
+Terminal=false
+Type=Application
+Categories=Utility;Education;Dictionary;
+Keywords=arabic;dictionary;rtl;

@@ -1,0 +1,4 @@
+#! /usr/bin/python3
+"""Arabic Lexicon 启动入口（由 deb 安装到 /usr/bin）。"""
+from arabic_lexicon.app import main
+main()

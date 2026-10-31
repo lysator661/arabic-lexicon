@@ -1,0 +1,13 @@
+Package: arabic-lexicon
+Version: 0.1.0
+Architecture: all
+Maintainer: Lysa <lysa@example.com>
+Installed-Size: 30
+Depends: python3:any, python3-pyqt6, qt6-wayland, fonts-noto-core
+Recommends: fonts-sil-scheherazade, fonts-sil-awami-nastaliq
+Section: utils
+Priority: optional
+Description: Offline Arabic→English dictionary with RTL UI
+ A lightweight dictionary: type Arabic, see English meanings,
+ part of speech and example sentences. Native Wayland support,
+ right-to-left layout for Arabic text.
