@@ -1,99 +1,57 @@
-# -*- coding: utf-8 -*-
-import json
-import os
-from pathlib import Path
-from PyQt6.QtWidgets import (
-    QApplication, QMainWindow, QWidget, QVBoxLayout,
-    QLineEdit, QLabel, QTextBrowser
-)
-from PyQt6.QtCore import Qt
+import tkinter as tk
+from tkinter import ttk, messagebox
+from arabic_lexicon.db import get_connection, init_db, get_all_entries, DEFAULT_DB_PATH
 
-# 词典数据路径：优先使用同目录下的 data.json（源码/开发模式），
-# 其次使用 /usr/lib/python3/dist-packages 下的安装路径。
-_HERE = Path(__file__).parent
-DATA = _HERE / "data.json"
-if not DATA.exists():
-    DATA = Path("/usr/lib/python3/dist-packages/arabic_lexicon/data.json")
+class App:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("阿拉伯语词典")
 
+        # 初始化数据库
+        self.conn = get_connection()
+        init_db(self.conn)
 
-class MainWindow(QMainWindow):
-    def __init__(self):
-        super().__init__()
-        self.setWindowTitle("Arabic Lexicon")
-        self.resize(560, 460)
+        # UI 布局
+        self.frame = ttk.Frame(root, padding=10)
+        self.frame.pack(fill=tk.BOTH, expand=True)
 
-        # —— RTL 适配核心 ——
-        # 1) 窗口整体布局方向设为从右到左
-        self.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
+        # 刷新按钮
+        self.btn_refresh = ttk.Button(self.frame, text="刷新词库", command=self.refresh_list)
+        self.btn_refresh.pack(side=tk.TOP, fill=tk.X, pady=5)
 
-        central = QWidget()
-        self.setCentralWidget(central)
-        lay = QVBoxLayout(central)
+        # 列表框 (绑定 StringVar 实现动态更新)[2,3](@ref)
+        self.list_var = tk.StringVar(value=[])
+        self.listbox = tk.Listbox(
+            self.frame,
+            listvariable=self.list_var,
+            font=("Noto Sans Arabic", 14),
+            height=15
+        )
+        self.listbox.pack(side=tk.TOP, fill=tk.BOTH, expand=True)
 
-        self.input = QLineEdit()
-        self.input.setPlaceholderText("اكتب كلمة عربية…")  # 写阿拉伯词…
-        self.input.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
-        self.input.textChanged.connect(self.lookup)
+        # 详情标签
+        self.detail_label = ttk.Label(self.frame, text="选择词条查看详情", wraplength=400)
+        self.detail_label.pack(side=tk.TOP, fill=tk.X, pady=10)
 
-        self.pos_label = QLabel()
-        self.pos_label.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
+        self.listbox.bind("<<ListSelection>>", self.show_detail)
+        self.refresh_list()
 
-        self.meanings = QTextBrowser()
-        self.meanings.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
-        self.meanings.setAlignment(Qt.AlignmentFlag.AlignRight)
+    def refresh_list(self):
+        """从 SQLite 重新读取并刷新列表"""
+        entries = get_all_entries(self.conn)
+        self.entries_cache = entries
+        # 格式化显示文本
+        display_list = [f"{e['arabic']} - {e['meaning']}" for e in entries]
+        self.list_var.set(display_list) # 动态更新 Listbox[4](@ref)
 
-        self.examples = QTextBrowser()
-        self.examples.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
-        self.examples.setAlignment(Qt.AlignmentFlag.AlignRight)
-
-        lay.addWidget(QLabel("Arabic → English"))
-        lay.addWidget(self.input)
-        lay.addWidget(self.pos_label)
-        lay.addWidget(QLabel("Meanings:"))
-        lay.addWidget(self.meanings)
-        lay.addWidget(QLabel("Examples:"))
-        lay.addWidget(self.examples)
-
-        self.data = json.loads(DATA.read_text(encoding="utf-8"))
-
-    # ------------------------------------------------------------------
-    # 查询逻辑
-    # ------------------------------------------------------------------
-    def lookup(self):
-        word = self.input.text().strip()
-        entry = self.data.get(word)
-        if not entry:
-            self.pos_label.clear()
-            self.meanings.clear()
-            self.examples.clear()
-            if word:
-                self.meanings.setPlainText("No entry found.")
-            return
-
-        self.pos_label.setText(f"<b>POS:</b> {entry.get('pos', '')}")
-
-        # meanings: 英文，保持 LTR
-        self.meanings.setMarkdown("- " + "\n- ".join(entry.get("meanings", [])))
-
-        # examples: 阿语用 dir=rtl，英文回译用 dir=ltr 包裹，双向文本不乱
-        ex = ""
-        for e in entry.get("examples", []):
-            ex += (
-                f"<p dir='rtl'>{e['ar']}"
-                f"<br><span dir='ltr'>↳ {e['en']}</span></p>"
-            )
-        self.examples.setHtml(ex)
-
-
-def main():
-    # Wayland 优先，失败自动回退 X11；不在脚本/desktop 里写死后端。
-    os.environ.setdefault("QT_QPA_PLATFORM", "wayland;xcb")
-    app = QApplication([])
-    app.setLayoutDirection(Qt.LayoutDirection.RightToLeft)
-    win = MainWindow()
-    win.show()
-    raise SystemExit(app.exec())
-
+    def show_detail(self, event):
+        sel = self.listbox.curselection()
+        if not sel: return
+        e = self.entries_cache[sel[0]]
+        text = f"类型: {e['type']}\n含义: {e['meaning']}\n例句: {e['example_ar']}"
+        self.detail_label.config(text=text)
 
 if __name__ == "__main__":
-    main()
+    root = tk.Tk()
+    app = App(root)
+    root.mainloop()
