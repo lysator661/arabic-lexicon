@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+
+# 构建产物
+*.deb
+*.buildinfo
+*.changes
+debian/.debhelper/
+debian/arabic-lexicon/
+debian/files
+debian/debhelper-build-stamp
+
+# 编辑器/系统
+*~
+.*.swp
+.DS_Store
+
+# 本地临时
+/tmp/
