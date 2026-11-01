@@ -2,7 +2,7 @@ Package: arabic-lexicon
 Version: 0.1.0
 Architecture: all
 Maintainer: Lysa <lysa@example.com>
-Installed-Size: 30
+Installed-Size: 76
 Depends: python3:any, python3-pyqt6, qt6-wayland, fonts-noto-core
 Recommends: fonts-sil-scheherazade, fonts-sil-awami-nastaliq
 Section: utils

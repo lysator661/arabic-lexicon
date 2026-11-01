@@ -1,23 +1,2783 @@
 {
-  "كتاب": {
+  "أب": {
     "pos": "noun",
-    "meanings": ["book", "volume", "publication"],
+    "meanings": [
+      "father",
+      "dad"
+    ],
     "examples": [
-      { "ar": "هذا كتاب مفيد.", "en": "This is a useful book." }
+      {
+        "ar": "أبي معلّم.",
+        "en": "My father is a teacher."
+      },
+      {
+        "ar": "أبي يعمل في المصنع.",
+        "en": "My father works in the factory."
+      }
     ]
   },
-  "يقرأ": {
+  "أم": {
+    "pos": "noun",
+    "meanings": [
+      "mother",
+      "mom"
+    ],
+    "examples": [
+      {
+        "ar": "الأم تحب ولدها.",
+        "en": "The mother loves her son."
+      },
+      {
+        "ar": "أمي طبيبة.",
+        "en": "My mother is a doctor."
+      }
+    ]
+  },
+  "بنت": {
+    "pos": "noun",
+    "meanings": [
+      "girl",
+      "daughter"
+    ],
+    "examples": [
+      {
+        "ar": "البنت تقرأ كتاباً.",
+        "en": "The girl is reading a book."
+      }
+    ]
+  },
+  "ولد": {
     "pos": "verb",
-    "meanings": ["to read", "to study", "to recite"],
+    "meanings": [
+      "boy",
+      "son",
+      "to be born"
+    ],
     "examples": [
-      { "ar": "يقرأ القصّة كل يوم.", "en": "He reads the story every day." }
+      {
+        "ar": "الولد يلعب في الحديقة.",
+        "en": "The boy is playing in the garden."
+      },
+      {
+        "ar": "ولد في المدينة.",
+        "en": "He was born in the city."
+      }
     ]
   },
-  "مدرسة": {
+  "رجل": {
     "pos": "noun",
-    "meanings": ["school", "educational institution"],
+    "meanings": [
+      "man",
+      "husband"
+    ],
     "examples": [
-      { "ar": "المدرسة قريبة من هنا.", "en": "The school is close to here." }
+      {
+        "ar": "الرجل يذهب إلى العمل.",
+        "en": "The man goes to work."
+      },
+      {
+        "ar": "رجل عجوز.",
+        "en": "An old man."
+      }
+    ]
+  },
+  "امرأة": {
+    "pos": "noun",
+    "meanings": [
+      "woman",
+      "wife"
+    ],
+    "examples": [
+      {
+        "ar": "المرأة تطبخ الطعام.",
+        "en": "The woman is cooking."
+      },
+      {
+        "ar": "امرأة لطيفة.",
+        "en": "A nice woman."
+      }
+    ]
+  },
+  "صديق": {
+    "pos": "noun",
+    "meanings": [
+      "friend"
+    ],
+    "examples": [
+      {
+        "ar": "هذا صديقي.",
+        "en": "This is my friend."
+      },
+      {
+        "ar": "صديقي يلعب معي.",
+        "en": "My friend plays with me."
+      }
+    ]
+  },
+  "واحد": {
+    "pos": "num",
+    "meanings": [
+      "one"
+    ],
+    "examples": [
+      {
+        "ar": "عندي كتاب واحد.",
+        "en": "I have one book."
+      },
+      {
+        "ar": "كتاب واحد.",
+        "en": "One book."
+      }
+    ]
+  },
+  "اثنان": {
+    "pos": "num",
+    "meanings": [
+      "two"
+    ],
+    "examples": [
+      {
+        "ar": "لديّ ولدان.",
+        "en": "I have two sons."
+      },
+      {
+        "ar": "طالبان اثنان.",
+        "en": "Two students."
+      }
+    ]
+  },
+  "ثلاثة": {
+    "pos": "num",
+    "meanings": [
+      "three"
+    ],
+    "examples": [
+      {
+        "ar": "اشتريت ثلاثة كتب.",
+        "en": "I bought three books."
+      },
+      {
+        "ar": "ثلاثة أقلام.",
+        "en": "Three pens."
+      }
+    ]
+  },
+  "عشرة": {
+    "pos": "num",
+    "meanings": [
+      "ten"
+    ],
+    "examples": [
+      {
+        "ar": "عنده عشرة دفاتر.",
+        "en": "He has ten notebooks."
+      },
+      {
+        "ar": "عشرة أصابع.",
+        "en": "Ten fingers."
+      }
+    ]
+  },
+  "يوم": {
+    "pos": "noun",
+    "meanings": [
+      "day"
+    ],
+    "examples": [
+      {
+        "ar": "اليوم جميل.",
+        "en": "Today is beautiful."
+      }
+    ]
+  },
+  "ليلة": {
+    "pos": "noun",
+    "meanings": [
+      "night"
+    ],
+    "examples": [
+      {
+        "ar": "الليل هادئ.",
+        "en": "The night is quiet."
+      }
+    ]
+  },
+  "صباح": {
+    "pos": "noun",
+    "meanings": [
+      "morning"
+    ],
+    "examples": [
+      {
+        "ar": "صباح الخير.",
+        "en": "Good morning."
+      }
+    ]
+  },
+  "مساء": {
+    "pos": "noun",
+    "meanings": [
+      "evening"
+    ],
+    "examples": [
+      {
+        "ar": "مساء النور.",
+        "en": "Good evening."
+      }
+    ]
+  },
+  "سنة": {
+    "pos": "noun",
+    "meanings": [
+      "year"
+    ],
+    "examples": [
+      {
+        "ar": "سنة جديدة سعيدة.",
+        "en": "Happy new year."
+      }
+    ]
+  },
+  "في": {
+    "pos": "prep",
+    "meanings": [
+      "in",
+      "at",
+      "on"
+    ],
+    "examples": [
+      {
+        "ar": "الكتاب في الحقيبة.",
+        "en": "The book is in the bag."
+      }
+    ]
+  },
+  "على": {
+    "pos": "prep",
+    "meanings": [
+      "on",
+      "upon"
+    ],
+    "examples": [
+      {
+        "ar": "القلم على الطاولة.",
+        "en": "The pen is on the table."
+      }
+    ]
+  },
+  "تحت": {
+    "pos": "prep",
+    "meanings": [
+      "under",
+      "below"
+    ],
+    "examples": [
+      {
+        "ar": "الكرة تحت الكرسي.",
+        "en": "The ball is under the chair."
+      }
+    ]
+  },
+  "بين": {
+    "pos": "prep",
+    "meanings": [
+      "between"
+    ],
+    "examples": [
+      {
+        "ar": "البيت بين شجرتين.",
+        "en": "The house is between two trees."
+      }
+    ]
+  },
+  "أمام": {
+    "pos": "prep",
+    "meanings": [
+      "in front of"
+    ],
+    "examples": [
+      {
+        "ar": "السيارة أمام البيت.",
+        "en": "The car is in front of the house."
+      }
+    ]
+  },
+  "ذهب": {
+    "pos": "verb",
+    "meanings": [
+      "to go"
+    ],
+    "examples": [
+      {
+        "ar": "نذهب إلى المدرسة.",
+        "en": "We go to school."
+      },
+      {
+        "ar": "ذهب إلى السوق.",
+        "en": "He went to the market."
+      }
+    ]
+  },
+  "جاء": {
+    "pos": "verb",
+    "meanings": [
+      "to come"
+    ],
+    "examples": [
+      {
+        "ar": "جاء المعلم مبكراً.",
+        "en": "The teacher came early."
+      },
+      {
+        "ar": "جاء من المدرسة.",
+        "en": "He came from school."
+      }
+    ]
+  },
+  "كتب": {
+    "pos": "verb",
+    "meanings": [
+      "to write"
+    ],
+    "examples": [
+      {
+        "ar": "كتبت رسالةً.",
+        "en": "I wrote a letter."
+      },
+      {
+        "ar": "كتب رسالة.",
+        "en": "He wrote a letter."
+      }
+    ]
+  },
+  "شرب": {
+    "pos": "verb",
+    "meanings": [
+      "to drink"
+    ],
+    "examples": [
+      {
+        "ar": "شرب الماء البارد.",
+        "en": "He drank cold water."
+      },
+      {
+        "ar": "شرب الماء.",
+        "en": "He drank water."
+      }
+    ]
+  },
+  "نام": {
+    "pos": "verb",
+    "meanings": [
+      "to sleep"
+    ],
+    "examples": [
+      {
+        "ar": "الطفل نام مبكراً.",
+        "en": "The child slept early."
+      },
+      {
+        "ar": "نام مبكرًا.",
+        "en": "He slept early."
+      }
+    ]
+  },
+  "فتح": {
+    "pos": "verb",
+    "meanings": [
+      "to open"
+    ],
+    "examples": [
+      {
+        "ar": "فتحت الباب.",
+        "en": "I opened the door."
+      },
+      {
+        "ar": "فتح الباب.",
+        "en": "He opened the door."
+      }
+    ]
+  },
+  "رأى": {
+    "pos": "verb",
+    "meanings": [
+      "to see"
+    ],
+    "examples": [
+      {
+        "ar": "رأيتُ سيارةً حمراء.",
+        "en": "I saw a red car."
+      }
+    ]
+  },
+  "كبير": {
+    "pos": "adj",
+    "meanings": [
+      "big",
+      "large",
+      "old"
+    ],
+    "examples": [
+      {
+        "ar": "البيت كبير.",
+        "en": "The house is big."
+      }
+    ]
+  },
+  "صغير": {
+    "pos": "adj",
+    "meanings": [
+      "small",
+      "little",
+      "young"
+    ],
+    "examples": [
+      {
+        "ar": "القط صغير.",
+        "en": "The cat is small."
+      },
+      {
+        "ar": "قطة صغيرة.",
+        "en": "A small cat."
+      }
+    ]
+  },
+  "جديد": {
+    "pos": "adj",
+    "meanings": [
+      "new"
+    ],
+    "examples": [
+      {
+        "ar": "هذا كتاب جديد.",
+        "en": "This is a new book."
+      },
+      {
+        "ar": "سيارة جديدة.",
+        "en": "A new car."
+      }
+    ]
+  },
+  "قديم": {
+    "pos": "adj",
+    "meanings": [
+      "old"
+    ],
+    "examples": [
+      {
+        "ar": "البيت قديم.",
+        "en": "The house is old."
+      },
+      {
+        "ar": "بيت قديم.",
+        "en": "An old house."
+      }
+    ]
+  },
+  "جميل": {
+    "pos": "adj",
+    "meanings": [
+      "beautiful",
+      "nice"
+    ],
+    "examples": [
+      {
+        "ar": "الوردة جميلة.",
+        "en": "The rose is beautiful."
+      },
+      {
+        "ar": "زهرة جميلة.",
+        "en": "A beautiful flower."
+      }
+    ]
+  },
+  "سريع": {
+    "pos": "adj",
+    "meanings": [
+      "fast",
+      "quick"
+    ],
+    "examples": [
+      {
+        "ar": "القطار سريع.",
+        "en": "The train is fast."
+      },
+      {
+        "ar": "قطار سريع.",
+        "en": "A fast train."
+      }
+    ]
+  },
+  "بطيء": {
+    "pos": "adj",
+    "meanings": [
+      "slow"
+    ],
+    "examples": [
+      {
+        "ar": "السلحفاة بطيئة.",
+        "en": "The turtle is slow."
+      },
+      {
+        "ar": "سلحفاة بطيئة.",
+        "en": "A slow turtle."
+      }
+    ]
+  },
+  "شمس": {
+    "pos": "noun",
+    "meanings": [
+      "sun"
+    ],
+    "examples": [
+      {
+        "ar": "الشمس ساطعة.",
+        "en": "The sun is bright."
+      },
+      {
+        "ar": "الشمس مشرقة.",
+        "en": "The sun is shining."
+      }
+    ]
+  },
+  "قمر": {
+    "pos": "noun",
+    "meanings": [
+      "moon"
+    ],
+    "examples": [
+      {
+        "ar": "القمر مضيء الليلة.",
+        "en": "The moon is bright tonight."
+      },
+      {
+        "ar": "القمر مضيء.",
+        "en": "The moon is bright."
+      }
+    ]
+  },
+  "ماء": {
+    "pos": "noun",
+    "meanings": [
+      "water"
+    ],
+    "examples": [
+      {
+        "ar": "الماء مصدر الحياة.",
+        "en": "Water is the source of life."
+      }
+    ]
+  },
+  "هواء": {
+    "pos": "noun",
+    "meanings": [
+      "air",
+      "wind"
+    ],
+    "examples": [
+      {
+        "ar": "الهواء نقي اليوم.",
+        "en": "The air is clean today."
+      }
+    ]
+  },
+  "طعام": {
+    "pos": "noun",
+    "meanings": [
+      "food"
+    ],
+    "examples": [
+      {
+        "ar": "الطعام لذيذ.",
+        "en": "The food is delicious."
+      }
+    ]
+  },
+  "خبز": {
+    "pos": "noun",
+    "meanings": [
+      "bread"
+    ],
+    "examples": [
+      {
+        "ar": "نأكل الخبز كل يوم.",
+        "en": "We eat bread every day."
+      }
+    ]
+  },
+  "حب": {
+    "pos": "noun",
+    "meanings": [
+      "love"
+    ],
+    "examples": [
+      {
+        "ar": "الحب يجمع القلوب.",
+        "en": "Love brings hearts together."
+      }
+    ]
+  },
+  "سلام": {
+    "pos": "noun",
+    "meanings": [
+      "peace"
+    ],
+    "examples": [
+      {
+        "ar": "نريد السلام.",
+        "en": "We want peace."
+      }
+    ]
+  },
+  "عمل": {
+    "pos": "verb",
+    "meanings": [
+      "work",
+      "job",
+      "deed",
+      "to work"
+    ],
+    "examples": [
+      {
+        "ar": "العمل شرف.",
+        "en": "Work is honor."
+      },
+      {
+        "ar": "يعمل في مكتب.",
+        "en": "He works in an office."
+      }
+    ]
+  },
+  "علم": {
+    "pos": "noun",
+    "meanings": [
+      "knowledge",
+      "science"
+    ],
+    "examples": [
+      {
+        "ar": "العلم نور.",
+        "en": "Knowledge is light."
+      }
+    ]
+  },
+  "حق": {
+    "pos": "noun",
+    "meanings": [
+      "right",
+      "truth"
+    ],
+    "examples": [
+      {
+        "ar": "الحق يعلو.",
+        "en": "Truth prevails."
+      }
+    ]
+  },
+  "قرأ": {
+    "pos": "verb",
+    "meanings": [
+      "to read"
+    ],
+    "examples": [
+      {
+        "ar": "قرأ الكتاب.",
+        "en": "He read the book."
+      }
+    ]
+  },
+  "أكل": {
+    "pos": "verb",
+    "meanings": [
+      "to eat"
+    ],
+    "examples": [
+      {
+        "ar": "أكل التفاحة.",
+        "en": "He ate the apple."
+      }
+    ]
+  },
+  "أغلق": {
+    "pos": "verb",
+    "meanings": [
+      "to close"
+    ],
+    "examples": [
+      {
+        "ar": "أغلق النافذة.",
+        "en": "He closed the window."
+      }
+    ]
+  },
+  "لعب": {
+    "pos": "verb",
+    "meanings": [
+      "to play"
+    ],
+    "examples": [
+      {
+        "ar": "لعب الأطفال في الحديقة.",
+        "en": "The children played in the garden."
+      }
+    ]
+  },
+  "سافر": {
+    "pos": "verb",
+    "meanings": [
+      "to travel"
+    ],
+    "examples": [
+      {
+        "ar": "سافر إلى مصر.",
+        "en": "He traveled to Egypt."
+      }
+    ]
+  },
+  "عاد": {
+    "pos": "verb",
+    "meanings": [
+      "to return"
+    ],
+    "examples": [
+      {
+        "ar": "عاد إلى البيت.",
+        "en": "He returned home."
+      }
+    ]
+  },
+  "درس": {
+    "pos": "verb",
+    "meanings": [
+      "to study"
+    ],
+    "examples": [
+      {
+        "ar": "درس الطالب الدرس.",
+        "en": "The student studied the lesson."
+      }
+    ]
+  },
+  "فهم": {
+    "pos": "verb",
+    "meanings": [
+      "to understand"
+    ],
+    "examples": [
+      {
+        "ar": "فهمت السؤال.",
+        "en": "I understood the question."
+      }
+    ]
+  },
+  "سأل": {
+    "pos": "verb",
+    "meanings": [
+      "to ask"
+    ],
+    "examples": [
+      {
+        "ar": "سأل عن الوقت.",
+        "en": "He asked about the time."
+      }
+    ]
+  },
+  "أجاب": {
+    "pos": "verb",
+    "meanings": [
+      "to answer"
+    ],
+    "examples": [
+      {
+        "ar": "أجاب بسرعة.",
+        "en": "He answered quickly."
+      }
+    ]
+  },
+  "أحب": {
+    "pos": "verb",
+    "meanings": [
+      "to love"
+    ],
+    "examples": [
+      {
+        "ar": "أحب عائلتي.",
+        "en": "I love my family."
+      }
+    ]
+  },
+  "كره": {
+    "pos": "verb",
+    "meanings": [
+      "to hate"
+    ],
+    "examples": [
+      {
+        "ar": "أكره الكذب.",
+        "en": "I hate lying."
+      }
+    ]
+  },
+  "أعطى": {
+    "pos": "verb",
+    "meanings": [
+      "to give"
+    ],
+    "examples": [
+      {
+        "ar": "أعطى الهدية.",
+        "en": "He gave the gift."
+      }
+    ]
+  },
+  "أخذ": {
+    "pos": "verb",
+    "meanings": [
+      "to take"
+    ],
+    "examples": [
+      {
+        "ar": "أخذ الكتاب.",
+        "en": "He took the book."
+      }
+    ]
+  },
+  "وجد": {
+    "pos": "verb",
+    "meanings": [
+      "to find"
+    ],
+    "examples": [
+      {
+        "ar": "وجد المفتاح.",
+        "en": "He found the key."
+      }
+    ]
+  },
+  "فقد": {
+    "pos": "verb",
+    "meanings": [
+      "to lose"
+    ],
+    "examples": [
+      {
+        "ar": "فقد هاتفه.",
+        "en": "He lost his phone."
+      }
+    ]
+  },
+  "عرف": {
+    "pos": "verb",
+    "meanings": [
+      "to know"
+    ],
+    "examples": [
+      {
+        "ar": "أعرف هذا الرجل.",
+        "en": "I know this man."
+      }
+    ]
+  },
+  "ظن": {
+    "pos": "verb",
+    "meanings": [
+      "to think"
+    ],
+    "examples": [
+      {
+        "ar": "ظن أن الأمر سهل.",
+        "en": "He thought it was easy."
+      }
+    ]
+  },
+  "قال": {
+    "pos": "verb",
+    "meanings": [
+      "to say"
+    ],
+    "examples": [
+      {
+        "ar": "قال كلمة طيبة.",
+        "en": "He said a kind word."
+      }
+    ]
+  },
+  "سمع": {
+    "pos": "verb",
+    "meanings": [
+      "to hear"
+    ],
+    "examples": [
+      {
+        "ar": "سمع صوتًا غريبًا.",
+        "en": "He heard a strange sound."
+      }
+    ]
+  },
+  "نظر": {
+    "pos": "verb",
+    "meanings": [
+      "to look"
+    ],
+    "examples": [
+      {
+        "ar": "نظر إلى السماء.",
+        "en": "He looked at the sky."
+      }
+    ]
+  },
+  "جلس": {
+    "pos": "verb",
+    "meanings": [
+      "to sit"
+    ],
+    "examples": [
+      {
+        "ar": "جلس على الكرسي.",
+        "en": "He sat on the chair."
+      }
+    ]
+  },
+  "وقف": {
+    "pos": "verb",
+    "meanings": [
+      "to stand"
+    ],
+    "examples": [
+      {
+        "ar": "وقف عند الباب.",
+        "en": "He stood at the door."
+      }
+    ]
+  },
+  "مشى": {
+    "pos": "verb",
+    "meanings": [
+      "to walk"
+    ],
+    "examples": [
+      {
+        "ar": "مشى في الشارع.",
+        "en": "He walked in the street."
+      }
+    ]
+  },
+  "جرى": {
+    "pos": "verb",
+    "meanings": [
+      "to run"
+    ],
+    "examples": [
+      {
+        "ar": "جرى نحو المدرسة.",
+        "en": "He ran toward the school."
+      }
+    ]
+  },
+  "طار": {
+    "pos": "verb",
+    "meanings": [
+      "to fly"
+    ],
+    "examples": [
+      {
+        "ar": "طار العصفور.",
+        "en": "The bird flew."
+      }
+    ]
+  },
+  "سبح": {
+    "pos": "verb",
+    "meanings": [
+      "to swim"
+    ],
+    "examples": [
+      {
+        "ar": "سبح في البحر.",
+        "en": "He swam in the sea."
+      }
+    ]
+  },
+  "قاد": {
+    "pos": "verb",
+    "meanings": [
+      "to drive"
+    ],
+    "examples": [
+      {
+        "ar": "قاد السيارة.",
+        "en": "He drove the car."
+      }
+    ]
+  },
+  "اشترى": {
+    "pos": "verb",
+    "meanings": [
+      "to buy"
+    ],
+    "examples": [
+      {
+        "ar": "اشترى خبزًا.",
+        "en": "He bought bread."
+      }
+    ]
+  },
+  "باع": {
+    "pos": "verb",
+    "meanings": [
+      "to sell"
+    ],
+    "examples": [
+      {
+        "ar": "باع الكتاب القديم.",
+        "en": "He sold the old book."
+      }
+    ]
+  },
+  "طبخ": {
+    "pos": "verb",
+    "meanings": [
+      "to cook"
+    ],
+    "examples": [
+      {
+        "ar": "طبخت أمي العشاء.",
+        "en": "My mother cooked dinner."
+      }
+    ]
+  },
+  "غسل": {
+    "pos": "verb",
+    "meanings": [
+      "to wash"
+    ],
+    "examples": [
+      {
+        "ar": "غسل يديه.",
+        "en": "He washed his hands."
+      }
+    ]
+  },
+  "لبس": {
+    "pos": "verb",
+    "meanings": [
+      "to wear"
+    ],
+    "examples": [
+      {
+        "ar": "لبس قميصًا أبيض.",
+        "en": "He wore a white shirt."
+      }
+    ]
+  },
+  "نزل": {
+    "pos": "verb",
+    "meanings": [
+      "to descend"
+    ],
+    "examples": [
+      {
+        "ar": "نزل من الطائرة.",
+        "en": "He got off the plane."
+      }
+    ]
+  },
+  "صعد": {
+    "pos": "verb",
+    "meanings": [
+      "to ascend"
+    ],
+    "examples": [
+      {
+        "ar": "صعد الجبل.",
+        "en": "He climbed the mountain."
+      }
+    ]
+  },
+  "مات": {
+    "pos": "verb",
+    "meanings": [
+      "to die"
+    ],
+    "examples": [
+      {
+        "ar": "مات الجد.",
+        "en": "The grandfather died."
+      }
+    ]
+  },
+  "كبر": {
+    "pos": "adj",
+    "meanings": [
+      "to grow up",
+      "big"
+    ],
+    "examples": [
+      {
+        "ar": "كبر الطفل بسرعة.",
+        "en": "The child grew up quickly."
+      },
+      {
+        "ar": "هذا منزل كبير.",
+        "en": "This is a big house."
+      }
+    ]
+  },
+  "طويل": {
+    "pos": "adj",
+    "meanings": [
+      "tall/long"
+    ],
+    "examples": [
+      {
+        "ar": "رجل طويل.",
+        "en": "A tall man."
+      }
+    ]
+  },
+  "قصير": {
+    "pos": "adj",
+    "meanings": [
+      "short"
+    ],
+    "examples": [
+      {
+        "ar": "شعر قصير.",
+        "en": "Short hair."
+      }
+    ]
+  },
+  "قبيح": {
+    "pos": "adj",
+    "meanings": [
+      "ugly"
+    ],
+    "examples": [
+      {
+        "ar": "منظر قبيح.",
+        "en": "An ugly view."
+      }
+    ]
+  },
+  "سهل": {
+    "pos": "adj",
+    "meanings": [
+      "easy"
+    ],
+    "examples": [
+      {
+        "ar": "امتحان سهل.",
+        "en": "An easy exam."
+      }
+    ]
+  },
+  "صعب": {
+    "pos": "adj",
+    "meanings": [
+      "difficult"
+    ],
+    "examples": [
+      {
+        "ar": "سؤال صعب.",
+        "en": "A difficult question."
+      }
+    ]
+  },
+  "نظيف": {
+    "pos": "adj",
+    "meanings": [
+      "clean"
+    ],
+    "examples": [
+      {
+        "ar": "غرفة نظيفة.",
+        "en": "A clean room."
+      }
+    ]
+  },
+  "قذر": {
+    "pos": "adj",
+    "meanings": [
+      "dirty"
+    ],
+    "examples": [
+      {
+        "ar": "ملابس قذرة.",
+        "en": "Dirty clothes."
+      }
+    ]
+  },
+  "حار": {
+    "pos": "adj",
+    "meanings": [
+      "hot"
+    ],
+    "examples": [
+      {
+        "ar": "جو حار.",
+        "en": "Hot weather."
+      }
+    ]
+  },
+  "بارد": {
+    "pos": "adj",
+    "meanings": [
+      "cold"
+    ],
+    "examples": [
+      {
+        "ar": "ماء بارد.",
+        "en": "Cold water."
+      }
+    ]
+  },
+  "غالي": {
+    "pos": "adj",
+    "meanings": [
+      "expensive"
+    ],
+    "examples": [
+      {
+        "ar": "هاتف غالٍ.",
+        "en": "An expensive phone."
+      }
+    ]
+  },
+  "رخيص": {
+    "pos": "adj",
+    "meanings": [
+      "cheap"
+    ],
+    "examples": [
+      {
+        "ar": "سلعة رخيصة.",
+        "en": "A cheap item."
+      }
+    ]
+  },
+  "غني": {
+    "pos": "adj",
+    "meanings": [
+      "rich"
+    ],
+    "examples": [
+      {
+        "ar": "رجل غني.",
+        "en": "A rich man."
+      }
+    ]
+  },
+  "فقير": {
+    "pos": "adj",
+    "meanings": [
+      "poor"
+    ],
+    "examples": [
+      {
+        "ar": "أسرة فقيرة.",
+        "en": "A poor family."
+      }
+    ]
+  },
+  "قوي": {
+    "pos": "adj",
+    "meanings": [
+      "strong"
+    ],
+    "examples": [
+      {
+        "ar": "رجل قوي.",
+        "en": "A strong man."
+      }
+    ]
+  },
+  "ضعيف": {
+    "pos": "adj",
+    "meanings": [
+      "weak"
+    ],
+    "examples": [
+      {
+        "ar": "إشارة ضعيفة.",
+        "en": "A weak signal."
+      }
+    ]
+  },
+  "سعيد": {
+    "pos": "adj",
+    "meanings": [
+      "happy"
+    ],
+    "examples": [
+      {
+        "ar": "طفل سعيد.",
+        "en": "A happy child."
+      }
+    ]
+  },
+  "حزين": {
+    "pos": "adj",
+    "meanings": [
+      "sad"
+    ],
+    "examples": [
+      {
+        "ar": "قصيدة حزينة.",
+        "en": "A sad poem."
+      }
+    ]
+  },
+  "غاضب": {
+    "pos": "adj",
+    "meanings": [
+      "angry"
+    ],
+    "examples": [
+      {
+        "ar": "معلم غاضب.",
+        "en": "An angry teacher."
+      }
+    ]
+  },
+  "خائف": {
+    "pos": "adj",
+    "meanings": [
+      "afraid"
+    ],
+    "examples": [
+      {
+        "ar": "فتاة خائفة.",
+        "en": "A scared girl."
+      }
+    ]
+  },
+  "متعب": {
+    "pos": "adj",
+    "meanings": [
+      "tired"
+    ],
+    "examples": [
+      {
+        "ar": "عامل متعب.",
+        "en": "A tired worker."
+      }
+    ]
+  },
+  "مريض": {
+    "pos": "adj",
+    "meanings": [
+      "sick"
+    ],
+    "examples": [
+      {
+        "ar": "جسم مريض.",
+        "en": "A sick body."
+      }
+    ]
+  },
+  "صحيح": {
+    "pos": "adj",
+    "meanings": [
+      "correct"
+    ],
+    "examples": [
+      {
+        "ar": "جواب صحيح.",
+        "en": "A correct answer."
+      }
+    ]
+  },
+  "خطأ": {
+    "pos": "adj",
+    "meanings": [
+      "wrong"
+    ],
+    "examples": [
+      {
+        "ar": "فكرة خاطئة.",
+        "en": "A wrong idea."
+      }
+    ]
+  },
+  "أربعة": {
+    "pos": "num",
+    "meanings": [
+      "four"
+    ],
+    "examples": [
+      {
+        "ar": "أربعة أبواب.",
+        "en": "Four doors."
+      }
+    ]
+  },
+  "خمسة": {
+    "pos": "num",
+    "meanings": [
+      "five"
+    ],
+    "examples": [
+      {
+        "ar": "خمسة أطفال.",
+        "en": "Five children."
+      }
+    ]
+  },
+  "ستة": {
+    "pos": "num",
+    "meanings": [
+      "six"
+    ],
+    "examples": [
+      {
+        "ar": "ستة كراسي.",
+        "en": "Six chairs."
+      }
+    ]
+  },
+  "سبعة": {
+    "pos": "num",
+    "meanings": [
+      "seven"
+    ],
+    "examples": [
+      {
+        "ar": "سبعة أيام.",
+        "en": "Seven days."
+      }
+    ]
+  },
+  "ثمانية": {
+    "pos": "num",
+    "meanings": [
+      "eight"
+    ],
+    "examples": [
+      {
+        "ar": "ثمانية طلاب.",
+        "en": "Eight students."
+      }
+    ]
+  },
+  "تسعة": {
+    "pos": "num",
+    "meanings": [
+      "nine"
+    ],
+    "examples": [
+      {
+        "ar": "تسعة أقمار.",
+        "en": "Nine moons."
+      }
+    ]
+  },
+  "بيت": {
+    "pos": "noun",
+    "meanings": [
+      "house",
+      "home"
+    ],
+    "examples": [
+      {
+        "ar": "هذا بيتنا.",
+        "en": "This is our house."
+      }
+    ]
+  },
+  "باب": {
+    "pos": "noun",
+    "meanings": [
+      "door"
+    ],
+    "examples": [
+      {
+        "ar": "أغلق الباب.",
+        "en": "Close the door."
+      }
+    ]
+  },
+  "نافذة": {
+    "pos": "noun",
+    "meanings": [
+      "window"
+    ],
+    "examples": [
+      {
+        "ar": "فتحت النافذة.",
+        "en": "I opened the window."
+      }
+    ]
+  },
+  "مطبخ": {
+    "pos": "noun",
+    "meanings": [
+      "kitchen"
+    ],
+    "examples": [
+      {
+        "ar": "المطبخ نظيف.",
+        "en": "The kitchen is clean."
+      }
+    ]
+  },
+  "حمام": {
+    "pos": "noun",
+    "meanings": [
+      "bathroom"
+    ],
+    "examples": [
+      {
+        "ar": "أين الحمام؟",
+        "en": "Where is the bathroom?"
+      }
+    ]
+  },
+  "غرفة": {
+    "pos": "noun",
+    "meanings": [
+      "room"
+    ],
+    "examples": [
+      {
+        "ar": "غرفة النوم واسعة.",
+        "en": "The bedroom is spacious."
+      }
+    ]
+  },
+  "سرير": {
+    "pos": "noun",
+    "meanings": [
+      "bed"
+    ],
+    "examples": [
+      {
+        "ar": "سرير مريح.",
+        "en": "A comfortable bed."
+      }
+    ]
+  },
+  "مكتب": {
+    "pos": "noun",
+    "meanings": [
+      "desk/office"
+    ],
+    "examples": [
+      {
+        "ar": "الكتاب على المكتب.",
+        "en": "The book is on the desk."
+      }
+    ]
+  },
+  "كرسي": {
+    "pos": "noun",
+    "meanings": [
+      "chair"
+    ],
+    "examples": [
+      {
+        "ar": "اجلس على الكرسي.",
+        "en": "Sit on the chair."
+      }
+    ]
+  },
+  "طاولة": {
+    "pos": "noun",
+    "meanings": [
+      "table"
+    ],
+    "examples": [
+      {
+        "ar": "الطاولة خشبية.",
+        "en": "The table is wooden."
+      }
+    ]
+  },
+  "هاتف": {
+    "pos": "noun",
+    "meanings": [
+      "phone"
+    ],
+    "examples": [
+      {
+        "ar": "رنّ الهاتف.",
+        "en": "The phone rang."
+      }
+    ]
+  },
+  "حاسوب": {
+    "pos": "noun",
+    "meanings": [
+      "computer"
+    ],
+    "examples": [
+      {
+        "ar": "أعمل على الحاسوب.",
+        "en": "I work on the computer."
+      }
+    ]
+  },
+  "تلفاز": {
+    "pos": "noun",
+    "meanings": [
+      "television"
+    ],
+    "examples": [
+      {
+        "ar": "التلفاز مكسور.",
+        "en": "The television is broken."
+      }
+    ]
+  },
+  "سيارة": {
+    "pos": "noun",
+    "meanings": [
+      "car"
+    ],
+    "examples": [
+      {
+        "ar": "سيارتي حمراء.",
+        "en": "My car is red."
+      }
+    ]
+  },
+  "حافلة": {
+    "pos": "noun",
+    "meanings": [
+      "bus"
+    ],
+    "examples": [
+      {
+        "ar": "انتظر الحافلة.",
+        "en": "Wait for the bus."
+      }
+    ]
+  },
+  "قطار": {
+    "pos": "noun",
+    "meanings": [
+      "train"
+    ],
+    "examples": [
+      {
+        "ar": "القطار سريع.",
+        "en": "The train is fast."
+      }
+    ]
+  },
+  "طائرة": {
+    "pos": "noun",
+    "meanings": [
+      "airplane"
+    ],
+    "examples": [
+      {
+        "ar": "الطائرة تطير عالياً.",
+        "en": "The airplane flies high."
+      }
+    ]
+  },
+  "شارع": {
+    "pos": "noun",
+    "meanings": [
+      "street"
+    ],
+    "examples": [
+      {
+        "ar": "الشارع مزدحم.",
+        "en": "The street is crowded."
+      }
+    ]
+  },
+  "سوق": {
+    "pos": "noun",
+    "meanings": [
+      "market"
+    ],
+    "examples": [
+      {
+        "ar": "ذهبت إلى السوق.",
+        "en": "I went to the market."
+      }
+    ]
+  },
+  "مستشفى": {
+    "pos": "noun",
+    "meanings": [
+      "hospital"
+    ],
+    "examples": [
+      {
+        "ar": "المستشفى قريب.",
+        "en": "The hospital is near."
+      }
+    ]
+  },
+  "مطار": {
+    "pos": "noun",
+    "meanings": [
+      "airport"
+    ],
+    "examples": [
+      {
+        "ar": "المطار كبير.",
+        "en": "The airport is big."
+      }
+    ]
+  },
+  "ميناء": {
+    "pos": "noun",
+    "meanings": [
+      "port"
+    ],
+    "examples": [
+      {
+        "ar": "السفينة في الميناء.",
+        "en": "The ship is at the port."
+      }
+    ]
+  },
+  "جسر": {
+    "pos": "noun",
+    "meanings": [
+      "bridge"
+    ],
+    "examples": [
+      {
+        "ar": "الجسر طويل.",
+        "en": "The bridge is long."
+      }
+    ]
+  },
+  "حديقة": {
+    "pos": "noun",
+    "meanings": [
+      "garden/park"
+    ],
+    "examples": [
+      {
+        "ar": "الأطفال في الحديقة.",
+        "en": "The children are in the park."
+      }
+    ]
+  },
+  "مزرعة": {
+    "pos": "noun",
+    "meanings": [
+      "farm"
+    ],
+    "examples": [
+      {
+        "ar": "الحيوانات في المزرعة.",
+        "en": "The animals are on the farm."
+      }
+    ]
+  },
+  "حيوان": {
+    "pos": "noun",
+    "meanings": [
+      "animal"
+    ],
+    "examples": [
+      {
+        "ar": "الأسد حيوان مفترس.",
+        "en": "The lion is a predator."
+      }
+    ]
+  },
+  "طائر": {
+    "pos": "noun",
+    "meanings": [
+      "bird"
+    ],
+    "examples": [
+      {
+        "ar": "العصفور طائر صغير.",
+        "en": "The sparrow is a small bird."
+      }
+    ]
+  },
+  "قطة": {
+    "pos": "noun",
+    "meanings": [
+      "cat"
+    ],
+    "examples": [
+      {
+        "ar": "القطة تلعب بالكرة.",
+        "en": "The cat plays with the ball."
+      }
+    ]
+  },
+  "كلب": {
+    "pos": "noun",
+    "meanings": [
+      "dog"
+    ],
+    "examples": [
+      {
+        "ar": "الكلب وفيّ.",
+        "en": "The dog is loyal."
+      }
+    ]
+  },
+  "حصان": {
+    "pos": "noun",
+    "meanings": [
+      "horse"
+    ],
+    "examples": [
+      {
+        "ar": "الحصان يركض.",
+        "en": "The horse runs."
+      }
+    ]
+  },
+  "بقرة": {
+    "pos": "noun",
+    "meanings": [
+      "cow"
+    ],
+    "examples": [
+      {
+        "ar": "البقرة تعطي الحليب.",
+        "en": "The cow gives milk."
+      }
+    ]
+  },
+  "خروف": {
+    "pos": "noun",
+    "meanings": [
+      "sheep"
+    ],
+    "examples": [
+      {
+        "ar": "الخروف أبيض.",
+        "en": "The sheep is white."
+      }
+    ]
+  },
+  "فيل": {
+    "pos": "noun",
+    "meanings": [
+      "elephant"
+    ],
+    "examples": [
+      {
+        "ar": "الفيل ضخم.",
+        "en": "The elephant is huge."
+      }
+    ]
+  },
+  "أسد": {
+    "pos": "noun",
+    "meanings": [
+      "lion"
+    ],
+    "examples": [
+      {
+        "ar": "الأسد ملك الغابة.",
+        "en": "The lion is the king of the jungle."
+      }
+    ]
+  },
+  "قرد": {
+    "pos": "noun",
+    "meanings": [
+      "monkey"
+    ],
+    "examples": [
+      {
+        "ar": "القرد يقفز على الشجرة.",
+        "en": "The monkey jumps on the tree."
+      }
+    ]
+  },
+  "دجاجة": {
+    "pos": "noun",
+    "meanings": [
+      "chicken"
+    ],
+    "examples": [
+      {
+        "ar": "الدجاجة تبيض.",
+        "en": "The chicken lays eggs."
+      }
+    ]
+  },
+  "سمكة": {
+    "pos": "noun",
+    "meanings": [
+      "fish"
+    ],
+    "examples": [
+      {
+        "ar": "السمكة تسبح في الماء.",
+        "en": "The fish swims in water."
+      }
+    ]
+  },
+  "نحلة": {
+    "pos": "noun",
+    "meanings": [
+      "bee"
+    ],
+    "examples": [
+      {
+        "ar": "النحلة تصنع العسل.",
+        "en": "The bee makes honey."
+      }
+    ]
+  },
+  "شجرة": {
+    "pos": "noun",
+    "meanings": [
+      "tree"
+    ],
+    "examples": [
+      {
+        "ar": "الشجرة عالية.",
+        "en": "The tree is tall."
+      }
+    ]
+  },
+  "زهرة": {
+    "pos": "noun",
+    "meanings": [
+      "flower"
+    ],
+    "examples": [
+      {
+        "ar": "الزهرة جميلة.",
+        "en": "The flower is beautiful."
+      }
+    ]
+  },
+  "وردة": {
+    "pos": "noun",
+    "meanings": [
+      "rose"
+    ],
+    "examples": [
+      {
+        "ar": "أهداها وردة حمراء.",
+        "en": "He gave her a red rose."
+      }
+    ]
+  },
+  "عشب": {
+    "pos": "noun",
+    "meanings": [
+      "grass"
+    ],
+    "examples": [
+      {
+        "ar": "العشب أخضر.",
+        "en": "The grass is green."
+      }
+    ]
+  },
+  "جبل": {
+    "pos": "noun",
+    "meanings": [
+      "mountain"
+    ],
+    "examples": [
+      {
+        "ar": "الجبل مرتفع.",
+        "en": "The mountain is high."
+      }
+    ]
+  },
+  "واد": {
+    "pos": "noun",
+    "meanings": [
+      "valley"
+    ],
+    "examples": [
+      {
+        "ar": "الوادي جميل.",
+        "en": "The valley is beautiful."
+      }
+    ]
+  },
+  "بحر": {
+    "pos": "noun",
+    "meanings": [
+      "sea"
+    ],
+    "examples": [
+      {
+        "ar": "البحر موجة.",
+        "en": "The sea is wavy."
+      }
+    ]
+  },
+  "نهر": {
+    "pos": "noun",
+    "meanings": [
+      "river"
+    ],
+    "examples": [
+      {
+        "ar": "النهر يمر بالمدينة.",
+        "en": "The river passes through the city."
+      }
+    ]
+  },
+  "مطر": {
+    "pos": "noun",
+    "meanings": [
+      "rain"
+    ],
+    "examples": [
+      {
+        "ar": "المطر غزير.",
+        "en": "The rain is heavy."
+      }
+    ]
+  },
+  "ثلج": {
+    "pos": "noun",
+    "meanings": [
+      "snow"
+    ],
+    "examples": [
+      {
+        "ar": "الثلج يغطي الأرض.",
+        "en": "Snow covers the ground."
+      }
+    ]
+  },
+  "ريح": {
+    "pos": "noun",
+    "meanings": [
+      "wind"
+    ],
+    "examples": [
+      {
+        "ar": "الريح قوية.",
+        "en": "The wind is strong."
+      }
+    ]
+  },
+  "نجمة": {
+    "pos": "noun",
+    "meanings": [
+      "star"
+    ],
+    "examples": [
+      {
+        "ar": "النجوم تتلألأ.",
+        "en": "The stars twinkle."
+      }
+    ]
+  },
+  "سماء": {
+    "pos": "noun",
+    "meanings": [
+      "sky"
+    ],
+    "examples": [
+      {
+        "ar": "السماء زرقاء.",
+        "en": "The sky is blue."
+      }
+    ]
+  },
+  "أرض": {
+    "pos": "noun",
+    "meanings": [
+      "earth/land"
+    ],
+    "examples": [
+      {
+        "ar": "الأرض خضراء.",
+        "en": "The earth is green."
+      }
+    ]
+  },
+  "حجر": {
+    "pos": "noun",
+    "meanings": [
+      "stone"
+    ],
+    "examples": [
+      {
+        "ar": "رمى حجرًا في الماء.",
+        "en": "He threw a stone into the water."
+      }
+    ]
+  },
+  "رمل": {
+    "pos": "noun",
+    "meanings": [
+      "sand"
+    ],
+    "examples": [
+      {
+        "ar": "الرمل ناعم.",
+        "en": "The sand is soft."
+      }
+    ]
+  },
+  "طريق": {
+    "pos": "noun",
+    "meanings": [
+      "road"
+    ],
+    "examples": [
+      {
+        "ar": "الطريق واسع.",
+        "en": "The road is wide."
+      }
+    ]
+  },
+  "مدينة": {
+    "pos": "noun",
+    "meanings": [
+      "city"
+    ],
+    "examples": [
+      {
+        "ar": "المدينة مزدحمة.",
+        "en": "The city is crowded."
+      }
+    ]
+  },
+  "قرية": {
+    "pos": "noun",
+    "meanings": [
+      "village"
+    ],
+    "examples": [
+      {
+        "ar": "القرية هادئة.",
+        "en": "The village is quiet."
+      }
+    ]
+  },
+  "دولة": {
+    "pos": "noun",
+    "meanings": [
+      "country"
+    ],
+    "examples": [
+      {
+        "ar": "مصر دولة عربية.",
+        "en": "Egypt is an Arab country."
+      }
+    ]
+  },
+  "عاصمة": {
+    "pos": "noun",
+    "meanings": [
+      "capital"
+    ],
+    "examples": [
+      {
+        "ar": "باريس عاصمة فرنسا.",
+        "en": "Paris is the capital of France."
+      }
+    ]
+  },
+  "لغة": {
+    "pos": "noun",
+    "meanings": [
+      "language"
+    ],
+    "examples": [
+      {
+        "ar": "العربية لغة جميلة.",
+        "en": "Arabic is a beautiful language."
+      }
+    ]
+  },
+  "شعب": {
+    "pos": "noun",
+    "meanings": [
+      "people/nation"
+    ],
+    "examples": [
+      {
+        "ar": "الشعب المصري طيب.",
+        "en": "The Egyptian people are kind."
+      }
+    ]
+  },
+  "عائلة": {
+    "pos": "noun",
+    "meanings": [
+      "family"
+    ],
+    "examples": [
+      {
+        "ar": "عائلتي كبيرة.",
+        "en": "My family is big."
+      }
+    ]
+  },
+  "أسرة": {
+    "pos": "noun",
+    "meanings": [
+      "household"
+    ],
+    "examples": [
+      {
+        "ar": "الأسرة تجتمع على العشاء.",
+        "en": "The family gathers for dinner."
+      }
+    ]
+  },
+  "ابن": {
+    "pos": "noun",
+    "meanings": [
+      "son"
+    ],
+    "examples": [
+      {
+        "ar": "ابنه يدرس في الجامعة.",
+        "en": "His son studies at the university."
+      }
+    ]
+  },
+  "ابنة": {
+    "pos": "noun",
+    "meanings": [
+      "daughter"
+    ],
+    "examples": [
+      {
+        "ar": "ابنتها تلعب بالدمية.",
+        "en": "Her daughter plays with the doll."
+      }
+    ]
+  },
+  "أخ": {
+    "pos": "noun",
+    "meanings": [
+      "brother"
+    ],
+    "examples": [
+      {
+        "ar": "أخي أكبر مني.",
+        "en": "My brother is older than me."
+      }
+    ]
+  },
+  "أخت": {
+    "pos": "noun",
+    "meanings": [
+      "sister"
+    ],
+    "examples": [
+      {
+        "ar": "أختي صغيرة.",
+        "en": "My sister is young."
+      }
+    ]
+  },
+  "جد": {
+    "pos": "noun",
+    "meanings": [
+      "grandfather"
+    ],
+    "examples": [
+      {
+        "ar": "جدي يحكي القصص.",
+        "en": "My grandfather tells stories."
+      }
+    ]
+  },
+  "جدة": {
+    "pos": "noun",
+    "meanings": [
+      "grandmother"
+    ],
+    "examples": [
+      {
+        "ar": "جدتي تصلي.",
+        "en": "My grandmother prays."
+      }
+    ]
+  },
+  "عم": {
+    "pos": "noun",
+    "meanings": [
+      "uncle (paternal)"
+    ],
+    "examples": [
+      {
+        "ar": "عمي يسكن قريبًا.",
+        "en": "My uncle lives nearby."
+      }
+    ]
+  },
+  "خال": {
+    "pos": "noun",
+    "meanings": [
+      "uncle (maternal)"
+    ],
+    "examples": [
+      {
+        "ar": "خالي طبيب.",
+        "en": "My maternal uncle is a doctor."
+      }
+    ]
+  },
+  "عمة": {
+    "pos": "noun",
+    "meanings": [
+      "aunt (paternal)"
+    ],
+    "examples": [
+      {
+        "ar": "عمتي تزورنا غدًا.",
+        "en": "My aunt will visit us tomorrow."
+      }
+    ]
+  },
+  "خالة": {
+    "pos": "noun",
+    "meanings": [
+      "aunt (maternal)"
+    ],
+    "examples": [
+      {
+        "ar": "خالتها معلمة.",
+        "en": "Her aunt is a teacher."
+      }
+    ]
+  },
+  "جار": {
+    "pos": "noun",
+    "meanings": [
+      "neighbor"
+    ],
+    "examples": [
+      {
+        "ar": "الجار طيب.",
+        "en": "The neighbor is kind."
+      }
+    ]
+  },
+  "ضيف": {
+    "pos": "noun",
+    "meanings": [
+      "guest"
+    ],
+    "examples": [
+      {
+        "ar": "الضيف وصل.",
+        "en": "The guest arrived."
+      }
+    ]
+  },
+  "طفل": {
+    "pos": "noun",
+    "meanings": [
+      "child"
+    ],
+    "examples": [
+      {
+        "ar": "طفل يضحك.",
+        "en": "A laughing child."
+      }
+    ]
+  },
+  "فتاة": {
+    "pos": "noun",
+    "meanings": [
+      "girl"
+    ],
+    "examples": [
+      {
+        "ar": "فتاة جميلة.",
+        "en": "A beautiful girl."
+      }
+    ]
+  },
+  "شاب": {
+    "pos": "noun",
+    "meanings": [
+      "young man"
+    ],
+    "examples": [
+      {
+        "ar": "شاب مجتهد.",
+        "en": "A hardworking young man."
+      }
+    ]
+  },
+  "عجوز": {
+    "pos": "noun",
+    "meanings": [
+      "elderly person"
+    ],
+    "examples": [
+      {
+        "ar": "عجوز حكيم.",
+        "en": "A wise elder."
+      }
+    ]
+  },
+  "رئيس": {
+    "pos": "noun",
+    "meanings": [
+      "president/chief"
+    ],
+    "examples": [
+      {
+        "ar": "رئيس الجمهورية.",
+        "en": "The president of the republic."
+      }
+    ]
+  },
+  "وزير": {
+    "pos": "noun",
+    "meanings": [
+      "minister"
+    ],
+    "examples": [
+      {
+        "ar": "وزير التعليم.",
+        "en": "The education minister."
+      }
+    ]
+  },
+  "طبيب": {
+    "pos": "noun",
+    "meanings": [
+      "doctor"
+    ],
+    "examples": [
+      {
+        "ar": "راجع الطبيب.",
+        "en": "He consulted the doctor."
+      }
+    ]
+  },
+  "ممرض": {
+    "pos": "noun",
+    "meanings": [
+      "nurse"
+    ],
+    "examples": [
+      {
+        "ar": "الممرض يعمل في المستشفى.",
+        "en": "The nurse works at the hospital."
+      }
+    ]
+  },
+  "مهندس": {
+    "pos": "noun",
+    "meanings": [
+      "engineer"
+    ],
+    "examples": [
+      {
+        "ar": "المهندس يرسم الخطة.",
+        "en": "The engineer draws the plan."
+      }
+    ]
+  },
+  "محامي": {
+    "pos": "noun",
+    "meanings": [
+      "lawyer"
+    ],
+    "examples": [
+      {
+        "ar": "المحامي يدافع عن المتهم.",
+        "en": "The lawyer defends the accused."
+      }
+    ]
+  },
+  "تاجر": {
+    "pos": "noun",
+    "meanings": [
+      "merchant"
+    ],
+    "examples": [
+      {
+        "ar": "التاجر يبيع الحرير.",
+        "en": "The merchant sells silk."
+      }
+    ]
+  },
+  "فلاح": {
+    "pos": "noun",
+    "meanings": [
+      "farmer"
+    ],
+    "examples": [
+      {
+        "ar": "الفلاح يزرع القمح.",
+        "en": "The farmer grows wheat."
+      }
+    ]
+  },
+  "جندي": {
+    "pos": "noun",
+    "meanings": [
+      "soldier"
+    ],
+    "examples": [
+      {
+        "ar": "الجندي يحمي وطنه.",
+        "en": "The soldier protects his country."
+      }
+    ]
+  },
+  "شرطي": {
+    "pos": "noun",
+    "meanings": [
+      "policeman"
+    ],
+    "examples": [
+      {
+        "ar": "الشرطي ينظم المرور.",
+        "en": "The policeman directs traffic."
+      }
+    ]
+  },
+  "سائق": {
+    "pos": "noun",
+    "meanings": [
+      "driver"
+    ],
+    "examples": [
+      {
+        "ar": "السائق يقود بسرعة.",
+        "en": "The driver drives fast."
+      }
+    ]
+  },
+  "طباخ": {
+    "pos": "noun",
+    "meanings": [
+      "cook"
+    ],
+    "examples": [
+      {
+        "ar": "الطباخ ماهر.",
+        "en": "The cook is skilled."
+      }
+    ]
+  },
+  "خباز": {
+    "pos": "noun",
+    "meanings": [
+      "baker"
+    ],
+    "examples": [
+      {
+        "ar": "الخباز يصنع الخبز.",
+        "en": "The baker makes bread."
+      }
+    ]
+  },
+  "نجار": {
+    "pos": "noun",
+    "meanings": [
+      "carpenter"
+    ],
+    "examples": [
+      {
+        "ar": "النجار يصنع الأثاث.",
+        "en": "The carpenter makes furniture."
+      }
+    ]
+  },
+  "حداد": {
+    "pos": "noun",
+    "meanings": [
+      "blacksmith"
+    ],
+    "examples": [
+      {
+        "ar": "الحداد يشكل الحديد.",
+        "en": "The blacksmith shapes iron."
+      }
+    ]
+  },
+  "حلاق": {
+    "pos": "noun",
+    "meanings": [
+      "barber"
+    ],
+    "examples": [
+      {
+        "ar": "الحلاق قص شعري.",
+        "en": "The barber cut my hair."
+      }
+    ]
+  },
+  "خياط": {
+    "pos": "noun",
+    "meanings": [
+      "tailor"
+    ],
+    "examples": [
+      {
+        "ar": "الخياط يفصل الثوب.",
+        "en": "The tailor sews the garment."
+      }
+    ]
+  },
+  "صياد": {
+    "pos": "noun",
+    "meanings": [
+      "fisherman"
+    ],
+    "examples": [
+      {
+        "ar": "الصياد يصطاد السمك.",
+        "en": "The fisherman catches fish."
+      }
+    ]
+  },
+  "بحار": {
+    "pos": "noun",
+    "meanings": [
+      "sailor"
+    ],
+    "examples": [
+      {
+        "ar": "البحار يعمل على السفينة.",
+        "en": "The sailor works on the ship."
+      }
+    ]
+  },
+  "فنان": {
+    "pos": "noun",
+    "meanings": [
+      "artist"
+    ],
+    "examples": [
+      {
+        "ar": "الفنان يرسم لوحة.",
+        "en": "The artist paints a picture."
+      }
+    ]
+  },
+  "كاتب": {
+    "pos": "noun",
+    "meanings": [
+      "writer"
+    ],
+    "examples": [
+      {
+        "ar": "الكاتب يصدر رواية.",
+        "en": "The writer publishes a novel."
+      }
+    ]
+  },
+  "شاعر": {
+    "pos": "noun",
+    "meanings": [
+      "poet"
+    ],
+    "examples": [
+      {
+        "ar": "الشاعر ينشد قصيدة.",
+        "en": "The poet recites a poem."
+      }
+    ]
+  },
+  "مغني": {
+    "pos": "noun",
+    "meanings": [
+      "singer"
+    ],
+    "examples": [
+      {
+        "ar": "المغني نال جائزة.",
+        "en": "The singer won an award."
+      }
+    ]
+  },
+  "ممثل": {
+    "pos": "noun",
+    "meanings": [
+      "actor"
+    ],
+    "examples": [
+      {
+        "ar": "الممثل يؤدي دورًا صعبًا.",
+        "en": "The actor plays a difficult role."
+      }
+    ]
+  },
+  "صحفي": {
+    "pos": "noun",
+    "meanings": [
+      "journalist"
+    ],
+    "examples": [
+      {
+        "ar": "الصحفي يكتب مقالًا.",
+        "en": "The journalist writes an article."
+      }
+    ]
+  },
+  "معلم": {
+    "pos": "noun",
+    "meanings": [
+      "teacher"
+    ],
+    "examples": [
+      {
+        "ar": "المعلم يشرح الدرس.",
+        "en": "The teacher explains the lesson."
+      }
+    ]
+  },
+  "أستاذ": {
+    "pos": "noun",
+    "meanings": [
+      "professor"
+    ],
+    "examples": [
+      {
+        "ar": "الأستاذ محاضر.",
+        "en": "The professor gives a lecture."
+      }
+    ]
+  },
+  "طالب": {
+    "pos": "noun",
+    "meanings": [
+      "student"
+    ],
+    "examples": [
+      {
+        "ar": "الطالب يذاكر.",
+        "en": "The student studies."
+      }
+    ]
+  },
+  "تلميذ": {
+    "pos": "noun",
+    "meanings": [
+      "pupil"
+    ],
+    "examples": [
+      {
+        "ar": "التلميذ مجتهد.",
+        "en": "The pupil is diligent."
+      }
+    ]
+  },
+  "خريج": {
+    "pos": "noun",
+    "meanings": [
+      "graduate"
+    ],
+    "examples": [
+      {
+        "ar": "الخريج يبحث عن عمل.",
+        "en": "The graduate looks for a job."
+      }
     ]
   }
 }
