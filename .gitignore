@@ -20,3 +20,6 @@ debian/debhelper-build-stamp
 
 # 本地临时
 /tmp/
+lexicon.db
+*.db
+lexicon.db
